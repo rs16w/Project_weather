@@ -18,7 +18,7 @@ def send_req_openweather(city):
     return requests.get(URL_BASE, params) 
 
 
-def resp_json_openweather(resp_openweather, city):
+def make_result_text(resp_openweather, city):
     resp_openweather_json = resp_openweather.json()
     main_data = resp_openweather_json.get("main") 
    
@@ -37,5 +37,5 @@ def write_in_file(result_text):
 if __name__ == "__main__": 
     city = input_city()
     resp_openweather = send_req_openweather(city)
-    result_text = resp_json_openweather(resp_openweather, city)
+    result_text = make_result_text(resp_openweather, city)
     write_in_file(result_text)
