@@ -1,1 +1,3 @@
+# requirements очень простой и очень олдскульный менеджер зависимостей для Python.
+# Но в современном мире лучше использовать Poetry (https://python-poetry.org), как new age инструмент
 requests == 2.9.1

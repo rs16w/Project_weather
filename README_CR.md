@@ -1,0 +1,1 @@
+# Советую генерировать README через генераторы, аля https://github.com/kefranabg/readme-md-generator
